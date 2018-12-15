@@ -1,4 +1,4 @@
-<!-- <div *ngIf="Product['show']"> -->
+<div *ngIf="Product['show']">
   <div [ngSwitch]="types">
     <div *ngSwitchCase="'plan'" >
       <div class="plan-header" [ngStyle]="{'background-image': 'url('+ Product['backgroundImg'] + ')'}" >
@@ -22,7 +22,7 @@
 
     </div>
   </div>
-<!-- </div> -->
+</div>
 
 <style>
 
