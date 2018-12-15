@@ -1,0 +1,27 @@
+.kunderLogo{
+    margin-left: 31px;
+    background: url('../assets/imgs/kunder-logo.svg') no-repeat left center;
+    background-size: auto 21px;
+}
+
+.telecom{
+    padding-left: 86px;
+    color: $grey-light;
+    font-size: 18px;
+}
+
+.menuButton{
+    margin: 0;
+    height: 56px;
+    width: 56px;
+    background: url('../assets/imgs/i-menu.svg') no-repeat center;
+    background-size: 16px 16px;
+}
+
+.toolbar-md{
+    padding: 0;
+}
+
+.toolbar-title-md {
+    padding: 0;
+}

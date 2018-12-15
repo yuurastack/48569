@@ -1,0 +1,77 @@
+home {
+    ion-content{
+        height: 100%;
+        width: 100%;
+
+        .header{
+            position: relative;
+            min-height: 207px;
+            height: 32.9vh;
+            background: $grey-white url('../../assets/imgs/smartphone-logo.svg') no-repeat center;
+            background-size: 62px 72px;
+        }
+
+        .buttons{
+            min-height: 290px;
+            height: calc(100vh - 32.9vh - 76px - 56px);
+            background-color: $white;
+            font-size: 0;
+
+            .buttonsHome{
+                min-height: 145px;
+                position: relative;
+                font-size: 16px;
+                padding: 0;
+                color: $grey;
+                background: $white no-repeat center calc(50% - 1.31em);
+                height: calc(50vh - 16.45vh - 36px - 28px);
+                width: 50%;
+
+                &:nth-child(2){
+                    border-left: solid 2px $grey-verylight;
+                }
+
+                &:nth-child(3){
+                    border-top: solid 2px $grey-verylight;
+                }
+
+                &:nth-child(4){
+                    border-left: solid 2px $grey-verylight;
+                    border-top: solid 2px $grey-verylight;
+                }
+
+            }
+
+            .buttonConsumo{
+                background-image: url('../../assets/imgs/i-up-down-arrows.svg');
+                background-size: 1.3125em 1.9375em; // 21 31
+            }
+            .buttonPlan{
+                background-image: url('../../assets/imgs/i-smartphone.svg');
+                background-size: 1.1875em 2.0625em; // 19 33
+            }
+            .buttonBolsas{
+                background-image: url('../../assets/imgs/i-shop-bag.svg');
+                background-size: 2em 2em; // 32 32
+            }
+            .buttonBeneficios{
+                background-image: url('../../assets/imgs/i-star.svg');
+                background-size: 2em 1.875em; //32 30
+            }
+
+            span{
+                display: block;
+                margin: auto;
+                margin-top: 8vh;
+            }
+
+        }
+
+        .scroll-content{
+            overflow-y: auto;
+        }
+
+    }
+
+}
+

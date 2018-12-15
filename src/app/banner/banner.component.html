@@ -1,0 +1,29 @@
+<!-- <div *ngIf="Product['show']"> -->
+  <div [ngSwitch]="types">
+    <div *ngSwitchCase="'plan'" >
+      <div class="plan-header" [ngStyle]="{'background-image': 'url('+ Product['backgroundImg'] + ')'}" >
+        
+           <h1 class="col-12">{{Product['productDescription']}}</h1>
+          <br>
+          <div class="button col-md-2">
+          <a href="{{Product['link']}}" class="btn btn-info btn-lg" role="button" >{{Product['buttonText']}}<!-- <i class="fas fa-arrow-right"></i> --></a>                 
+          </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'cellphone'">
+      
+        <div class="product-header" [ngStyle]="{'background-image': 'linear-gradient(to top right, #3333cc 0%, #006666 101%)'}">
+            <img src="{{Product['productImg']}}">
+              <h2><span >{{Product['productName']}}</span>
+                <br>{{Product['productDescription']}}
+              </h2>      
+
+        </div>
+
+    </div>
+  </div>
+<!-- </div> -->
+
+<style>
+
+</style>
